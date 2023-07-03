@@ -27,4 +27,8 @@ static buildUserCollection() : Collection <User , UserProps>{
 
 }
 
+setRandomAge(): void {
+  const age = Math.round(Math.random()* 1000);
+  this.set({age});
+}
 }
